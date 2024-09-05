@@ -1,0 +1,420 @@
+.manage-form-container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  width: 55%;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product-info-row {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.product-info-row input {
+  flex: 1;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.entry-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.entry-row input {
+  flex: 1;
+  margin-right: 10px;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.btn-add, .btn-remove {
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.btn-add {
+  background-color: #2e8b57; 
+}
+
+.btn-remove {
+  background-color: #dc143c; 
+}
+
+.btn-add:hover, .btn-remove:hover {
+  opacity: 0.9;
+}
+
+/* Submit button */
+.btn-submit {
+  margin-top: 20px;
+  padding: 10px 15px;
+  background-color: #1e3a8a;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+  font-weight: bold;
+}
+
+.btn-submit:hover {
+  background-color: #16457a; 
+}
+
+input {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+
+
+
+
+
+/* ==================== */
+/* Container for the list of graphs */
+.graph-listing-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Individual Graph Item */
+.graph-item {
+  background-color: white;
+  padding: 20px;
+  width: 48%; 
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Graph Title and Control Buttons (View/Delete) */
+.graph-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.graph-header h2 {
+  font-size: 20px;
+  color: #1e3a8a;
+}
+
+/* Buttons for View and Delete */
+.graph-controls {
+  display: flex;
+  gap: 10px;
+}
+
+.btn-view, .btn-delete {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+}
+
+.btn-view {
+  background-color: #1e3a8a;
+}
+
+.btn-delete {
+  background-color: #dc143c;
+}
+
+/* Content Area for the Graph */
+.graph-content {
+  margin: 20px 0;
+  width: 100%; 
+}
+
+/* Dropdown for downloading graph data */
+.graph-download {
+  position: absolute;
+  top: 20px;
+  right: 10px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-button {
+  background-color: transparent;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  background-color: white;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  border-radius: 4px;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 8px 12px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+/* 
+=============== */
+
+
+.btn-update {
+  padding: 6px 12px;
+  background-color: #1d4ed8;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* h2 {
+  color: #1e40af;
+} */
+
+p {
+  color: #6b7280;
+}
+
+h3 {
+  font-size: 30px;
+  font-weight: bold;
+  color: #1d4ed8;
+}
+
+
+
+/* Container for the entire layout */
+.graph-detail-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #f4f6fa;
+  gap: 20px;
+}
+
+/* Graph section styling */
+.graph-section {
+  flex: 1;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+.graph-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.graph-container {
+  height: 400px; 
+}
+
+/* Button styling */
+.btn-group button {
+  padding: 8px 16px;
+  background-color: #1d4ed8;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Metrics section styling */
+.metrics-section {
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.metric {
+  border-top: 1px solid #ddd;
+  padding-top: 10px;
+  text-align: left;
+}
+
+.metric h3 {
+  font-size: 24px;
+  color: #1d4ed8;
+}
+
+.metric p {
+  color: #6b7280;
+  margin: 0;
+}
+
+.metric h4 {
+  color: #111827;
+}
+
+
+
+/* Main container for the login form */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f4f6fa;
+}
+
+/* Form styling */
+.login-form {
+  width: 100%;
+  max-width: 400px;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Input field styling */
+input[type="text"], input[type="password"] {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #d1d5db;
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: #f3f4f6;
+}
+
+/* Error message styling */
+.error-message {
+  color: red;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+/* Input fields with error */
+.input-error {
+  border-color: red;
+  background-color: #fce8e8;
+}
+
+/* Login button */
+button[type="submit"] {
+  background-color: #000080; /* Navy blue color */
+  color: white;
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* Forgot password link */
+.login-form a {
+  color: #000080;  
+  text-decoration: none;
+  font-size: 14px;
+  align-self: flex-end;
+  margin-top: -10px;
+  font-weight: bold;
+}
+
+/* Button hover effect */
+button[type="submit"]:hover {
+  background-color: #1a1a50; 
+}
+
+
+
+/* Navbar container */
+.navbar {
+  background-color: #1e3a8a; 
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* List of links */
+.nav-links {
+  display: flex;
+  list-style-type: none;
+  gap: 20px; 
+}
+
+/* Link styles */
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 10px 15px;
+  transition: background-color 0.3s ease;
+  border-radius: 5px;
+}
+
+/* Active link styles */
+.active-link {
+  background-color: #16457a; 
+  font-weight: bold;
+}
+
+/* Hover effect */
+.nav-links a:hover {
+  background-color: #1a1a50; 
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 600px) {
+  .nav-links {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+}
